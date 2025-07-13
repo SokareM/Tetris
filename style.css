@@ -1,0 +1,539 @@
+*
+{
+margin: 0;
+padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.cont
+{
+    width:96%;
+    display:flex;
+    align-items:center;
+    margin:auto;
+}
+
+.map
+{
+ width:40%;
+}
+.map img
+{
+    max-width:100%;
+}
+
+
+
+header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    position:fixed;
+    height:60px;
+ 
+    width:100%;
+    z-index:3;
+    color:white;
+}
+#banner
+{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    background-image: url("imgs/5.png");
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    max-width:100%;
+}
+.loc
+{
+    position:absolute;
+    bottom:30px;
+    right:20px;
+    z-index:5;
+    color:goldenrod;
+    font-size:20px;
+    text-shadow:1px 1px 1px black;
+    font-style: italic;
+}
+.logocont
+{
+    position:absolute;
+    width:600px;
+    height:auto;
+    right:calc(50% - 300px);
+    bottom:calc(50% - 150px);
+    z-index:5;
+}
+#logo1
+{
+   width:100%;
+    height:auto;
+}
+.banneref
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;   
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 2;
+   
+}
+.parallax {
+  background-image: url('imgs/5.png'); /* Your image path */
+  height: 40vh; /* Full screen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mb
+{display: none;}
+.contact
+{
+    display:flex;
+    padding:130px;
+    gap:300px;
+    width:100%;
+}
+.contactinfo
+{
+    
+    font-size: 20px;
+}
+.contactinfo ul
+{
+    list-style-type:none;
+    padding:0;
+    margin-right: 50px;
+}
+.contactinfo ul li
+{
+    margin-bottom:10px;
+}
+.paralax img
+{
+    width:100%;
+    height:auto;
+    position:fixed;
+}
+.parallax1 {
+  background-image: url('imgs/3.png'); /* Your image path */
+  height: 40vh; /* Full screen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.paralax1 img
+{
+    width:100%;
+    height:auto;
+    position:fixed;
+}
+nav ul
+{
+    list-style-type:none;
+    display:flex;
+    gap:20px;
+    font-size: 20px;
+}
+nav a
+{
+padding: 0px 10px;
+text-decoration: none;
+color:white;
+}
+
+#menu-toggle
+{
+    height:30px;
+    width:30px;   
+    font-weight: 900;
+    display:none;
+    
+}    
+header h1
+{
+    text-align: center;
+    box-shadow:5px 5px 10px black;
+text-shadow:1px 1px 1px black;
+padding:20px;
+background-color: #536C4D;
+font-size:40px;
+opacity: 0;
+
+}
+#mainTitle
+{
+      
+  transition: all 0.7s ease;
+}
+
+#banner img
+{
+width:100%;
+
+height:100%;
+object-fit: cover;
+}
+.show
+{
+    opacity: 1 !important;
+    
+}
+.headerbg
+{
+       background-image: url('imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom:1px solid #3d3d3c;
+}
+main
+{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    
+}
+.text
+{
+    
+    text-align: left;
+    font-size: 28px;
+    line-height: 1.5;
+    padding:80px 30px;
+    background-color:rgb(61, 6, 6);
+    color:white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 5px 5px 10px black;
+    box-sizing: border-box;
+    
+}
+.text h1
+{
+   background-color: #536C4D;
+}
+h1
+{
+ box-shadow:5px 5px 10px black;
+    text-shadow:1px 1px 1px black;
+    padding:10px;
+  border:2px solid black;
+    font-size:50px;
+    margin-top:10px;
+
+}
+h2
+{
+    
+    text-shadow:1px 1px 1px black;
+    padding:10px;
+    border-bottom:2px solid white;
+    font-size:20px;
+    margin-top:10px;
+}
+
+ .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width:100%;
+      gap: 10px;
+      overflow-x: hidden;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width:100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+.intgal
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    width:90%;
+    gap: 10px;
+    margin:0 auto;
+    padding:10px;
+}
+.intgal img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.g_photo img
+{
+    max-width:100%;
+    height:auto;
+    
+   
+
+}
+.zind
+{
+    z-index:100
+}
+.overlay {
+  background-color: black;
+  position: fixed; /* <--- changed from absolute */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;     /* optional for dark transparency */
+  z-index: 99;     /* make sure it's on top */
+  display:none;
+}
+.show
+{
+    display:flex !important;
+}
+.enlarged
+{
+    position:absolute;
+    width:auto !important;
+    max-width:100%;
+    height:90% !important;
+    left:30%;
+    object-fit: cover;
+
+
+}
+.noscroll
+{
+    overflow: hidden; /* Prevents scrolling */
+}
+
+#f_cont
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 40px 100px ;
+background-color: #536C4D;
+
+}
+#f_cont ul
+{
+list-style: none;
+}
+#f_cont ul a
+{
+    text-decoration:none;
+    font-size:20px;
+    color:white;
+}
+.cont
+{
+    display:flex;
+    
+   justify-content: space-between;
+    margin:0 auto;
+    
+    padding:30px;
+}
+.cont ul
+{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 40px;
+}
+.cont ul li
+{
+    padding:5px;
+    border-bottom:1px solid white;
+    font-weight: 900;
+
+}
+#prices
+{
+    
+    border:2px solid black;
+    border-radius:4px;
+   background: 
+    linear-gradient(rgba(156, 112, 112, 0.7), rgba(170, 167, 167, 0.9)),
+    url('imgs/pricesbg.png');
+    background-size: cover;
+    background-position: center;
+    width:40%;
+    margin:0 auto;
+    padding-bottom:300px;
+}
+#prices h2
+{
+    text-align: center;
+    font-size:30px;
+    margin-bottom:40px;
+}
+.lcont
+{
+background-color: rgb(61, 6, 6);;
+margin-top:50px;
+border-bottom:3px solid black;
+padding:20px;
+max-width:100%;
+display:flex;
+justify-content: center;
+
+}
+.lcont img
+{
+    width:50%;
+    height:auto;
+    
+}
+/* Responsive Design */
+
+@media (max-width: 600px) 
+{
+#menu-toggle
+{
+    display:block;
+}
+nav
+{
+   
+    position:absolute;
+    left:0;
+    top:30px;
+    display:none;
+    width:100%;
+    
+    
+   
+    
+}
+nav ul
+{
+    
+    background-size: cover;
+    background-position: center;
+    margin:auto;
+        display:flex;
+flex-direction: column;
+align-items: flex-start;
+padding:0;
+   
+
+ 
+}
+header
+{
+    height:30px;
+}
+header h1
+{
+    text-align: center;
+    box-shadow:5px 5px 10px black;
+text-shadow:1px 1px 1px black;
+padding:10px;
+background-color: #536C4D;
+font-size:20px;
+}
+.dt
+{
+    display:none;
+}
+.mb
+{
+    display: block;
+}
+.gal
+{
+    display:flex;
+    flex-direction: column  ;
+    gap: 10px;
+   
+} 
+.enlarged
+{
+    left:0;
+
+}
+.cont{
+    width:90%;
+    margin:auto;
+}
+.cont ul
+{
+   
+    font-size: 20px;
+}
+.logocont
+{
+    position:absolute;
+    width:400px;
+    max-width:100%;
+    height:auto;
+   left:0;
+  
+    z-index:5;
+}
+
+.text
+{
+    font-size: 20px;
+    padding:10px;
+}
+#prices
+{
+padding-bottom:100px;
+width:80%;
+}
+.contact
+{
+    flex-direction: column;
+    padding:20px;
+    gap:20px;
+}
+.contactinfo
+{
+    font-size: 25px;
+    padding:10px;
+    margin:auto;
+}
+.contactinfo ul
+{
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+}
+.map
+{
+    margin:auto;
+    width:80%;
+}
+
+#f_cont
+{
+
+padding: 20px 20px !important;
+font-size: 15px;
+
+
+
+}
+#f_menu li a
+{
+    font-size:15px;
+}
+}
