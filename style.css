@@ -6,9 +6,24 @@ padding: 0;
 
 }
 
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: italic;
+}
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  
+  font-style: italic;
+}
+
 html {
   scroll-behavior: smooth;
+ 
 }
+
 .cont
 {
     width:96%;
@@ -90,10 +105,22 @@ header
 .parallax {
   background-image: url('imgs/5.png'); /* Your image path */
   height: 40vh; /* Full screen */
+  max-height:40vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position:relative;
+}
+.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(218, 212, 212, 0.4); /* <-- This is the overlay color and opacity */
+  z-index: 1;
 }
 .mb
 {display: none;}
@@ -132,12 +159,23 @@ header
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+    position:relative;
 }
 .paralax1 img
 {
     width:100%;
     height:auto;
     position:fixed;
+}
+.parallax1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(218, 212, 212, 0.4);  /* <-- This is the overlay color and opacity */
+  z-index: 1;
 }
 nav ul
 {
@@ -214,7 +252,9 @@ main
     font-size: 28px;
     line-height: 1.5;
     padding:80px 30px;
-    background-color:rgb(61, 6, 6);
+       background-image: url(imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color:white;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
@@ -362,6 +402,7 @@ list-style: none;
     padding:5px;
     border-bottom:1px solid white;
     font-weight: 900;
+    height:50px;
 
 }
 #prices
