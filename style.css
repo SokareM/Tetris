@@ -104,8 +104,8 @@ header
 }
 .parallax {
   background-image: url('imgs/5.png'); /* Your image path */
-  height: 40vh; /* Full screen */
-  max-height:40vh;
+  height: 400px; /* Full screen */
+ 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ header
 }
 .parallax1 {
   background-image: url('imgs/3.png'); /* Your image path */
-  height: 40vh; /* Full screen */
+  height: 400px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,7 +199,7 @@ color:white;
     display:none;
     
 }    
-header h1
+#mainTitle
 {
     text-align: center;
     box-shadow:5px 5px 10px black;
