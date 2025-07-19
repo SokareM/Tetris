@@ -459,7 +459,14 @@ list-style: none;
     position:relative;
     z-index:100;
 }
-
+.parallax {
+  background-image: url('imgs/5.png'); /* Your image path */
+  height: 600px; /* Full screen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #prices h2
 {
     text-align: center;
