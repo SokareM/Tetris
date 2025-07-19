@@ -11,21 +11,26 @@ togglemenu.addEventListener("click", function(e) {
     nav.classList.remove('show');
 
   });
-  const images = document.querySelectorAll('#gal img');
-  const overlay = document.querySelector('.overlay');
-  const body = document.body;
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      event.stopPropagation()
-      img.classList.toggle('enlarged');
-      img.classList.toggle('zind');
-      overlay.classList.toggle('show');
-      body.classList.toggle('noscroll');
-       const scrollY = window.scrollY;
-            img.style.top = (scrollY + 30) + 'px';
-            
-    });
+
+    const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const images = document.querySelectorAll('#gal img');
+
+images.forEach(img => {
+  img.addEventListener('click', e => {
+    e.stopPropagation();
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+    document.body.classList.add('noscroll');
   });
+});
+
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+  lightboxImg.src = '';
+  document.body.classList.remove('noscroll');
+});
+  
   window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
     const header = document.querySelector('header');
@@ -45,3 +50,8 @@ togglemenu.addEventListener("click", function(e) {
       nav.classList.remove('headerbg');
     }
   });
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+  lightboxImg.src = '';
+  document.body.classList.remove('noscroll');
+})

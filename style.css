@@ -52,7 +52,7 @@ header
     height:60px;
  
     width:100%;
-    z-index:3;
+    z-index:200;
     color:white;
 }
 #banner
@@ -60,7 +60,7 @@ header
     width:100vw;
     height:100vh;
     position:relative;
-    background-image: url("imgs/5.png");
+    background-image: url("imgs/6.png");
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
@@ -91,6 +91,9 @@ header
    width:100%;
     height:auto;
 }
+#banner {
+  padding-top: 60px; /* same as your header height */
+}
 .banneref
 {
     position:absolute;
@@ -102,26 +105,24 @@ header
     z-index: 2;
    
 }
-.parallax {
-  background-image: url('imgs/5.png'); /* Your image path */
-  height: 400px; /* Full screen */
- 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position:relative;
+.parallax-container {
+  position: relative;
+  height: 40vh;
+  overflow: hidden;
 }
-.parallax::before {
-  content: '';
-  position: absolute;
-  top: 0;
+.parallax-bg {
+  position: fixed;
+  top:-10%;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(218, 212, 212, 0.4); /* <-- This is the overlay color and opacity */
-  z-index: 1;
+  height: 120%; /* taller than container */
+  background-image: url('imgs/5.png');
+  background-size: cover;
+  background-position: center;
+  transform: translateY(10%); /* adjust for scroll illusion */
+  z-index: -1;
 }
+
 .mb
 {display: none;}
 .contact
@@ -130,6 +131,7 @@ header
     padding:130px;
     gap:300px;
     width:100%;
+    background-color:beige;
 }
 .contactinfo
 {
@@ -204,7 +206,7 @@ color:white;
     text-align: center;
     box-shadow:5px 5px 10px black;
 text-shadow:1px 1px 1px black;
-padding:20px;
+padding:10px;
 background-color: #536C4D;
 font-size:40px;
 opacity: 0;
@@ -262,11 +264,11 @@ main
     box-sizing: border-box;
     
 }
-.text h1
+.text h2
 {
    background-color: #536C4D;
 }
-h1
+h2
 {
  box-shadow:5px 5px 10px black;
     text-shadow:1px 1px 1px black;
@@ -276,22 +278,21 @@ h1
     margin-top:10px;
 
 }
-h2
+h1
 {
     
     text-shadow:1px 1px 1px black;
     padding:10px;
     border-bottom:2px solid white;
-    font-size:20px;
+    font-size:30px;
     margin-top:10px;
+    background-color: #536C4D;
+    border-radius:10px;
 }
 
  .gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      max-width:100%;
-      gap: 10px;
-      overflow-x: hidden;
+  background-color:beige;
+  position:relative;
     }
 
     .gallery img {
@@ -310,6 +311,7 @@ h2
     gap: 10px;
     margin:0 auto;
     padding:10px;
+    position: relative;
 }
 .intgal img
 {
@@ -341,6 +343,20 @@ h2
   z-index: 99;     /* make sure it's on top */
   display:none;
 }
+section
+{
+    position:relative
+}
+.overlay1
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 99; /* semi-transparent black */
+}
 .show
 {
     display:flex !important;
@@ -355,6 +371,24 @@ h2
     object-fit: cover;
 
 
+}
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 }
 .noscroll
 {
@@ -405,6 +439,10 @@ list-style: none;
     height:50px;
 
 }
+.pricesandcontact
+{
+    padding:30px 0
+}
 #prices
 {
     
@@ -418,7 +456,10 @@ list-style: none;
     width:40%;
     margin:0 auto;
     padding-bottom:300px;
+    position:relative;
+    z-index:100;
 }
+
 #prices h2
 {
     text-align: center;
@@ -428,7 +469,7 @@ list-style: none;
 .lcont
 {
 background-color: rgb(61, 6, 6);;
-margin-top:50px;
+
 border-bottom:3px solid black;
 padding:20px;
 max-width:100%;
@@ -477,9 +518,13 @@ padding:0;
 
  
 }
+#maintitle
+{
+    font-size:30px;
+}
 header
 {
-    height:30px;
+    height:40px;
 }
 header h1
 {
@@ -503,6 +548,7 @@ font-size:20px;
     display:flex;
     flex-direction: column  ;
     gap: 10px;
+    position:relative;
    
 } 
 .enlarged
