@@ -105,23 +105,8 @@ header
     z-index: 2;
    
 }
-.parallax-container {
-  position: relative;
-  height: 40vh;
-  overflow: hidden;
-}
-.parallax-bg {
-  position: fixed;
-  top:-10%;
-  left: 0;
-  width: 100%;
-  height: 120%; /* taller than container */
-  background-image: url('imgs/5.png');
-  background-size: cover;
-  background-position: center;
-  transform: translateY(10%); /* adjust for scroll illusion */
-  z-index: -1;
-}
+
+
 
 .mb
 {display: none;}
@@ -157,6 +142,8 @@ header
 .parallax1 {
   background-image: url('imgs/3.png'); /* Your image path */
   height: 400px; 
+  max-height:400px;
+  min-height:400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
