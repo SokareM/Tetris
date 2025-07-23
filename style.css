@@ -19,11 +19,17 @@ padding: 0;
   font-style: italic;
 }
 
+
 html {
   scroll-behavior: smooth;
  
 }
-
+#fcontact 
+{
+    font-size: 40px;
+    padding:5px;
+    border-bottom:1px solid black;
+}
 .cont
 {
     width:96%;
@@ -113,8 +119,8 @@ header
 .contact
 {
     display:flex;
-    padding:130px;
-    gap:300px;
+    padding:100px;
+    gap:100px;
     width:100%;
     background-color:beige;
 }
@@ -122,6 +128,7 @@ header
 {
     
     font-size: 20px;
+    width:40%;
 }
 .contactinfo ul
 {
@@ -249,7 +256,7 @@ h2
 h1
 {
     
-    text-shadow:1px 1px 1px black;
+    text-shadow:4px 4px 4px black;
     padding:10px;
     border-bottom:2px solid white;
     font-size:30px;
@@ -325,7 +332,7 @@ section
     position:absolute;
     top:0;
     left:0;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.7);
     z-index: 99; /* semi-transparent black */
 }
 .show
@@ -412,22 +419,21 @@ list-style: none;
 }
 .prices
 {
-    padding:30px 0;
+    padding:20px 0;
     background-image: url('imgs/4.png');
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
 }
+.prices img
+{
+    width:100%;
+    height:auto;
+}
 #prices
 {
     
-    border:2px solid black;
-    border-radius:4px;
-   background: 
-    linear-gradient(rgba(156, 112, 112, 0.7), rgba(170, 167, 167, 0.9)),
-    url('imgs/pricesbg.png');
-    background-size: cover;
-    background-position: center;
+   
     width:40%;
     margin:0 auto;
     padding-bottom:300px;
@@ -462,9 +468,15 @@ justify-content: center;
 }
 .lcont img
 {
-    width:50%;
+    width:30%;
     height:auto;
     
+}
+.fas
+
+{
+    color:rgb(48, 48, 51) !important;
+    margin-right:5px;
 }
 /* Responsive Design */
 
@@ -575,24 +587,31 @@ width:80%;
     padding:20px;
     gap:20px;
 }
+
+}
 .contactinfo
 {
     font-size: 25px;
     padding:10px;
     margin:auto;
+    width:100%;
 }
 .contactinfo ul
 {
     margin:0 auto;
     padding:0;
-    text-align: center;
+    text-align: left;
 }
 .map
 {
     margin:auto;
-    width:80%;
+    width:98%;
 }
-
+.map img
+{
+    width:100%;
+    height:auto;
+}
 #f_cont
 {
 
@@ -602,8 +621,13 @@ font-size: 10px;
 
 
 }
+#fcontact
+{
+    font-size: 20px;
+    padding:5px;
+    border-bottom:1px solid black;
+}
 #f_menu li a
 {
     font-size:15px;
-}
 }
