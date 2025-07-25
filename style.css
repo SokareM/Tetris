@@ -517,9 +517,11 @@ h2
 {
     font-size:25px;
 }
-#maintitle
+#mainTitle
 {
-    font-size:30px;
+    font-size:25px;
+    padding:3px;
+    
 }
 header
 {
