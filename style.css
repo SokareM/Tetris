@@ -160,6 +160,7 @@ nav ul
     display:flex;
     gap:20px;
     font-size: 20px;
+    
 }
 nav a
 {
@@ -207,10 +208,10 @@ object-fit: cover;
 }
 .headerbg
 {
-       background-image: url('imgs/bg.jpg');
+       background-color: rgb(31, 30, 30);
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom:1px solid #3d3d3c;
+    
 }
 main
 {
