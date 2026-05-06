@@ -1,3 +1,4 @@
+
 *
 {
 margin: 0;
@@ -232,8 +233,8 @@ main
     font-size: 28px;
     line-height: 1.5;
     padding:80px 30px;
-        background-color:#1A0006;
-    color:white;
+    background-color: #121212;
+color: #eaeaea;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     box-shadow: 5px 5px 10px black;
@@ -286,10 +287,10 @@ h1
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
-    width:90%;
-    gap: 10px;
+    width:100%;
+    gap: 5px;
     margin:0 auto;
-    padding:10px;
+    padding:2px;
     position: relative;
 }
 .intgal img
@@ -461,7 +462,7 @@ list-style: none;
 }
 .lcont
 {
-background-color: rgb(61, 6, 6);;
+background-color: #121212;
 
 border-bottom:3px solid black;
 padding:20px;
